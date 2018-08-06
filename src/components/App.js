@@ -11,6 +11,29 @@ import "../stylesheets/base/global.css";
 import "../stylesheets/App.css";
 
 class App extends Component {
+  componentDidMount() {
+    // This is a very hacky way to add extenal scripts to the react application.
+    // Ideally we would import the npm equivalant for the project, but the intructions
+    // for this project were not intended to be a react app and be built in a traditional stucture.
+    const externalScripts = [{ 
+      src: "https://code.jquery.com/jquery-1.12.4.js",
+      integrity: "sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=",
+      crossorigin: "anonymous",
+      }, {
+        src: "https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js",
+      }, {
+        src: "https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"
+      }, {
+        src: "https://pushible.com/js/prompt?imp=adx"
+      }];
+
+      externalScripts.map(_script => {
+        const script = document.createElement("script");
+        script.src = _script.src;
+        document.body.appendChild(script);
+      });
+  }
+
   render() {
     return (
       <div className="App">
@@ -47,6 +70,12 @@ class App extends Component {
           <Devices />
         </main>
         <Footer />
+        <Helmet>
+          <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous" />
+          <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"/>
+          <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"/>
+          <script src="https://pushible.com/js/prompt?imp=adx"/>
+        </Helmet>
       </div>
     );
   }
