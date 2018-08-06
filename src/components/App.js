@@ -3,6 +3,8 @@ import Helmet from 'react-helmet';
 
 import Hero from '../components/Hero';
 import Info from '../components/Info';
+import Devices from '../components/Devices';
+import Footer from '../components/Footer';
 
 import "../stylesheets/base/fonts.css";
 import "../stylesheets/base/global.css";
@@ -42,7 +44,9 @@ class App extends Component {
         <Hero />
         <main>
           <Info />
+          <Devices />
         </main>
+        <Footer />
         <Helmet>
           <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous" />
           <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"/>

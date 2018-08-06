@@ -21,7 +21,7 @@ export default function Info() {
   }]
 
   return(
-    <section className="info" data-type="info">
+    <section className="info" id="info">
       <ContentWrapper className="info-wrapper" >
         <Heading><span>How does</span><span className="logo typeface purple"></span> <span>work?</span></Heading>
         <h2 className="sub-heading">All you need is to sign up! We’ll take care of the rest.</h2>

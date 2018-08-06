@@ -1,0 +1,9 @@
+.device-badge {
+  padding: .8rem 1.8rem;
+  background-color: #f04168;
+  border-radius: .6rem;
+  color: #ffffff;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  white-space: nowrap; }
