@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import scriptLoader from 'react-async-script-loader'
 import Helmet from 'react-helmet';
 
 import Hero from '../components/Hero';
@@ -53,11 +52,4 @@ class App extends Component {
   }
 }
 
-export default scriptLoader(
-  [
-    'https://code.jquery.com/jquery-1.12.4.js',
-    'https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js',
-  ],
-  "https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js",
-  "https://pushible.com/js/prompt?imp=adx",
-)(App)
+export default App;
