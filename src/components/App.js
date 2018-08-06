@@ -47,12 +47,6 @@ class App extends Component {
           <Devices />
         </main>
         <Footer />
-        <Helmet>
-          <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous" />
-          <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"/>
-          <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-messaging.js"/>
-          <script src="https://pushible.com/js/prompt?imp=adx"/>
-        </Helmet>
       </div>
     );
   }
