@@ -22,7 +22,7 @@ export default function SignupForm() {
 
   return(
     <section className="signup-form modules">
-      <ContentWrapper className="devices-wrapper" >
+      <ContentWrapper className="signup-wrapper" >
         <Heading>Sign Up Now, and get <strong>all</strong> the NHL <strong>news</strong> at your <strong>fingertips</strong>.</Heading>
             <div className="sub-heading">
           <div className="logo typeface white"></div>
