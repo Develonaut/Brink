@@ -7,6 +7,7 @@ export default function button({
   className = null,
   type = null,
   children = [],
+  onClick = () => {},
 }) {
   return(
     <button 
@@ -14,6 +15,7 @@ export default function button({
       type={type}
       name={name}
       className={className}
+      onClick={onClick}
     >
       {children}
     </button>

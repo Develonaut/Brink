@@ -1,6 +1,7 @@
 @import '../../base/variables.scss';
 
 .jump-to {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +15,10 @@
   transition: background-color 200ms ease-in-out;
   animation: jumpTofloat 4s 1s infinite ease-in-out;
   outline: none;
+
+  * {
+    pointer-events: none;
+  }
 
   &:hover {
     background-color: $white;

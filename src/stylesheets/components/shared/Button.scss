@@ -17,6 +17,10 @@
   outline: none;
   border: 2px solid transparent;
   transition: background-color 200ms;
+  
+  * {
+    pointer-events: none;
+  }
 
   &:focus {
     outline: none;

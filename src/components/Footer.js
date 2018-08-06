@@ -14,7 +14,7 @@ export default function Footer() {
             <a target="_blank" href=""><i className="icon-twitter"></i></a>
             <a target="_blank" href=""><i className="icon-facebook"></i></a>
             <a target="_blank" href=""><i className="icon-discord"></i></a>
-            <JumpTo>
+            <JumpTo target="hero">
               <i className="icon-arrow-up"/>
             </JumpTo>
           </div>

@@ -8,7 +8,7 @@ import 'stylesheets/components/Hero.css';
 
 export default function Hero() {
   return(
-    <header className="hero" data-type="hero">
+    <header className="hero" id="hero">
     <ContentWrapper className="hero-wrapper">
       <Heading>Notifications <strong>you</strong> can be <strong>excited</strong> about, with</Heading>
       <section className="call-to-action">
@@ -28,7 +28,7 @@ export default function Hero() {
             <i className="icon-device-phone" />
           </Button>
         </div>
-        <JumpTo>
+        <JumpTo target="info">
           <i className="icon-arrow-down"/>
         </JumpTo>
       </section>
