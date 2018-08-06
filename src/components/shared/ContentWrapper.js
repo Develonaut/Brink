@@ -1,11 +1,12 @@
 import React from 'react';
+import '../../stylesheets/components/shared/ContentWrapper.css';
 
 export default function ContentWrapper({
   children = [],
   className = '',
 }) {
   return(
-    <div class={`content-wrapper ${className}`}>
+    <div className={`content-wrapper ${className}`}>
       {children}
     </div>
   );

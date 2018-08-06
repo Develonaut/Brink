@@ -8,13 +8,13 @@ import 'stylesheets/components/Hero.css';
 
 export default function Hero() {
   return(
-    <header class="hero" data-type="hero">
+    <header className="hero" data-type="hero">
     <ContentWrapper className="hero-wrapper">
       <Heading>Notifications <strong>you</strong> can be <strong>excited</strong> about, with</Heading>
-      <section class="call-to-action">
-        <div class="logo icon"></div>
-        <div class="logo typeface white"></div>
-        <div class="action-buttons">
+      <section className="call-to-action">
+        <div className="logo icon"></div>
+        <div className="logo typeface white"></div>
+        <div className="action-buttons">
           <Button className="button" >
             <span>Sign Up</span>
             <i className="icon-pen" />
@@ -28,7 +28,9 @@ export default function Hero() {
             <i className="icon-device-phone" />
           </Button>
         </div>
-        <JumpTo />
+        <JumpTo>
+          <i className="icon-arrow-down"/>
+        </JumpTo>
       </section>
     </ContentWrapper>
     </header>
