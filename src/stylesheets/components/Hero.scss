@@ -6,7 +6,7 @@
   background-size: cover;
   padding: 4rem 2rem;
 
-  .content-wrapper.header-wrapper {
+  .content-wrapper.hero-wrapper {
     display: grid;
     grid-template-rows: auto auto;
     justify-items: center;
@@ -49,7 +49,7 @@
   @media only screen and (min-width: $tablet-breakpoint) {
     padding-top: 12.2rem;
 
-    .content-wrapper.header-wrapper {
+    .content-wrapper.hero-wrapper {
       .logo.icon {
         width: 18.9rem;
         height: 14.8rem;
@@ -82,7 +82,7 @@
   }
 
   @media only screen and (min-width: $desktop-breakpoint) {
-    .content-wrapper.header-wrapper {
+    .content-wrapper.hero-wrapper {
       .logo.typeface {
         width: 41.8rem;
         height: 8.5rem;

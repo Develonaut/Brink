@@ -2,6 +2,7 @@ import React from 'react';
 import Heading from "components/shared/Heading";
 import ContentWrapper from "components/shared/ContentWrapper";
 import Button from "components/shared/Button";
+import JumpTo from "components/shared/JumpTo";
 
 import 'stylesheets/components/Hero.css';
 
@@ -27,9 +28,7 @@ export default function Hero() {
             <i className="icon-device-phone" />
           </Button>
         </div>
-        <Button className="jump-to" >
-          <i className="icon-device-phone" />
-        </Button>
+        <JumpTo />
       </section>
     </ContentWrapper>
     </header>
