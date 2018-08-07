@@ -1,36 +1,28 @@
 import React from 'react';
 import '../../stylesheets/components/shared/Input.css';
 
-export default class Input extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: '',
-      error: null,
-    }
-  }
-
-  onChange = (event) => {
-    console.log(event);
-    // this.setState()
-  }
-
+export default class Input extends React.Component {
   render() {
     const {
       id = null,
       type = null,
       placeholder = null,
       name = null,
+      value = '',
+      onChange = undefined,
+      error = false,
     } = this.props;
 
+    const errorClass = (error) ? 'error' : '';
     return(
       <input
-        className="input"
+        className={`input ${errorClass}`}
         id={id}
         type={type}
         placeholder={placeholder}
         name={name}
-        onChange={this.onChange}
+        onChange={onChange}
+        value={value}
       />
     );
   }

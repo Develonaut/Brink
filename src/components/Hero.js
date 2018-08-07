@@ -15,10 +15,10 @@ export default function Hero() {
         <div className="logo icon"></div>
         <div className="logo typeface white"></div>
         <div className="action-buttons">
-          <Button className="button" >
+          <JumpTo className="button" target="signup">
             <span>Sign Up</span>
             <i className="icon-pen" />
-          </Button>
+          </JumpTo>
           <Button className="button activate-install" >
             <span>Desktop</span>
             <i className="icon-device-desktop" />

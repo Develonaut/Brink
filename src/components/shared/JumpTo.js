@@ -20,11 +20,12 @@ export default class JumpTo extends React.PureComponent {
   render() {
     const {
       children = [],
+      className = 'jump-to',
     } = this.props;
 
     return (
       <Button
-        className="jump-to"
+        className={className}
         onClick={this.jumpToTarget}
       >
         {children}
