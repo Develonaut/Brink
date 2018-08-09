@@ -1,4 +1,5 @@
 import React from 'react';
+import Slide from 'react-reveal/Slide';
 
 export default function InfoArticle({
   iconclassName = null,
@@ -6,18 +7,20 @@ export default function InfoArticle({
   text = null,
 }) {
   return(
-    <article className="info-article module">
-      { iconclassName && <i className={iconclassName} /> }
-      { header && 
-        <header className="heading">
-          {header}
-        </header>
-      }
-      { text &&
-        <p className="text">
-          {text}
-        </p>
-      }
-    </article>
+    <Slide bottom>
+      <article className="info-article bottom">
+        { iconclassName && <i className={iconclassName} /> }
+        { header && 
+          <header className="heading">
+            {header}
+          </header>
+        }
+        { text &&
+          <p className="text">
+            {text}
+          </p>
+        }
+      </article>
+    </Slide>
   );
 }

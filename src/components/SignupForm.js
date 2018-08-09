@@ -3,6 +3,7 @@ import Heading from "components/shared/Heading";
 import ContentWrapper from "components/shared/ContentWrapper";
 import Input from "components/shared/Input";
 import Button from 'components/shared/Button';
+import Slide from 'react-reveal/Slide';
 
 import "stylesheets/components/SignupForm.css";
 
@@ -86,7 +87,8 @@ export default class SignupForm extends React.Component {
     const { inputs } = this.state;
 
     return(
-      <section className="signup-form modules" id="signup">
+      <section className="signup-form" id="signup">
+      <Slide bottom>
         <ContentWrapper className="signup-wrapper" >
           <Heading>Sign Up Now, and get <strong>all</strong> the NHL <strong>news</strong> at your <strong>fingertips</strong>.</Heading>
               <div className="sub-heading">
@@ -126,6 +128,7 @@ export default class SignupForm extends React.Component {
             </div>
           </form>
         </ContentWrapper>
+        </Slide>
       </section>
     );
   }

@@ -1,23 +1,14 @@
 @import './partials/logo.scss';
 
+html {
+  box-sizing: border-box;
+  font-size: 10px; // Set 1rem to 10px base.
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .hidden {
   display: none;
-}
-
-.come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
-}
-
-.come-in:nth-child(odd) {
-  animation-duration: 0.6s; /* So they look staggered */
-}
-
-.already-visible {
-  transform: translateY(0);
-  animation: none;
-}
-
-@keyframes come-in {
-  to { transform: translateY(0); }
 }
