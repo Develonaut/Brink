@@ -11,9 +11,9 @@ export default function Footer() {
           <p>© 2018 Brink. All rights reserved, Brink LLC</p>
           <p>Proudly made by Ryan McHenry</p>
           <div className="social">
-            <a target="_blank" href=""><i className="icon-twitter"></i></a>
-            <a target="_blank" href=""><i className="icon-facebook"></i></a>
-            <a target="_blank" href=""><i className="icon-discord"></i></a>
+            <a target="_blank" href="https://twitter.com/Develonaut" rel="noopener noreferrer"><i className="icon-twitter"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/ryan-mchenry-0416323a/" rel="noopener noreferrer"><i className="icon-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/Develonaut" rel="noopener noreferrer"><i className="icon-github"></i></a>
             <JumpTo target="hero">
               <i className="icon-arrow-up"/>
             </JumpTo>
